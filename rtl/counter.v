@@ -1,4 +1,4 @@
-module counter(clk,reset,count);
+module counter (clk,reset,count);
 input clk,reset;
 output reg[3:0]count;
 
