@@ -1,6 +1,6 @@
 import re
 from pathlib import Path
-from scanner import find_rtl_files
+from .scanner import find_rtl_files
 
 def extract_modules(rtl_file):
     rtl_file = Path(rtl_file)
