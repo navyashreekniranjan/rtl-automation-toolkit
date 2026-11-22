@@ -5,18 +5,18 @@ def find_rtl_files(rtl_directory):
 
     if not rtl_directory.exists():
         raise FileNotFoundError(
-            f"RTL directory does not exsist: {rtl_directory}"
+            f"RTL directory does not exist: {rtl_directory}"
         )
 
     if not rtl_directory.is_dir():
         raise NotADirectoryError(
-            f"Path is not directory: {rtl_directory}"
+            f"Path is not a directory: {rtl_directory}"
         )
 
     rtl_files = []
 
     for file in rtl_directory.rglob("*"):
-        if file.is_file and file.suffix in [".v", ".sv"]:
+        if file.is_file() and file.suffix in [".v", ".sv"]:
             rtl_files.append(file)
 
     return rtl_files
