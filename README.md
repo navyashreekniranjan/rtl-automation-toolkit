@@ -1,9 +1,9 @@
-RTL AUTOMATION TOOLKIT
+## RTL AUTOMATION TOOLKIT
 
 A Python-based automation toolkit for analyzing Verilog RTL designs, detecting potential issues, running lint checks, analyzing Git changes, and generating reports.
 
 
-Features
+## Features
 
 - RTL File Scanner : Finds RTL source files in the project
 - Module Analyzer : Identifies module declaration
@@ -16,7 +16,7 @@ Features
 - Report Generation: Generates JSON, CSV, and HTML reports.
 
 
-Technologies used
+## Technologies used
 - Python3
 - Regular expressions
 - Verilator
@@ -24,7 +24,8 @@ Technologies used
 - Pytest
 
 
-Project Structure
+## Project Structure
+```text
 rtl-automation-toolkit/
 ├── main.py
 ├── generate_sample_report.py
@@ -42,9 +43,9 @@ rtl-automation-toolkit/
 │   └── reports/
 ├── test/
 └── reports/
+```
 
-
-Installation
+## Installation
 
 - Clone the repository:
     git clone https://github.com/navyashreekniranjan/rtl-automation-toolkit.git
@@ -54,21 +55,27 @@ Installation
     pip install -r requirements-dev.txt
 - Ensure Python 3, Git, and Verilator are installed and available in your system PATH.
 
+```bash
+git clone https://github.com/navyashreekniranjan/rtl-automation-toolkit.git
+cd rtl-automation-toolkit
+pip install -r requirements-dev.txt
+```
 
-Usage
+
+## Usage
 
 - Run the toolkit from the project root:
     python main.py
 - The toolkit analyzes the RTL files and generates reports in the reports/ directory.
 
 
-Running Tests
+## Running Tests
 
 - Run the automated test suite:
     python -m pytest -v
 
 
-Known Limitations
+## Known Limitations
 
 - Some RTL constructs may not be fully recognized by the current regular-expression-based       
   analyzers.
@@ -76,13 +83,14 @@ Known Limitations
 - Verilator lint results depend on the syntax and validity of the input RTL files.
 
 
-Future Improvements
+## Future Improvements
 
 - Improve RTL parsing to support more Verilog and SystemVerilog constructs.
 - Reduce false positives in dependency analysis.
 - Expand automated test coverage.
 - Add more detailed lint and analysis reports.
 
-Author
+## Author
 
-RTL Automation Toolkit Project
+**Navyashree K N**
+- GitHub: https://github.com/navyashreekniranjan/rtl-automation-toolkit.git
