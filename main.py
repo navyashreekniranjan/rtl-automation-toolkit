@@ -36,7 +36,7 @@ def main():
 
     print("\nDuplicate Module Analysis:")    
     duplicates = duplicate_checker(rtl_files)
-    print("Dupilcate Modules:", duplicates)
+    print("Duplicate Modules:", duplicates)
 
     print("\nDependency Analysis:")
     dependencies = analyze_dependencies(rtl_files)
@@ -88,14 +88,6 @@ def main():
     print("HTML Report Generated:", html_report)
 
    
-
-
-
-
-
-
-
-
 
 
 
