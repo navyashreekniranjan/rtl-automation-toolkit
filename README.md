@@ -93,4 +93,4 @@ pip install -r requirements-dev.txt
 ## Author
 
 **Navyashree K N**
-- GitHub: https://github.com/navyashreekniranjan/rtl-automation-toolkit.git
+- GitHub: https://github.com/navyashreekniranjan
